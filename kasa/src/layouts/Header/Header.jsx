@@ -1,59 +1,32 @@
 // IMPORTS
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-import colors from '../../style/colors'
-import media from '../../style/media'
+import { Link, NavLink } from 'react-router-dom'
+import './header.css'
 
 // ASSETS
 import Logo from '../../assets/logo.png'
 
-// STYLES
-const ContHeader = styled.nav`
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 50px 0;
-`
-const ContLink = styled.div`
-   display: inline-flex;
-`
-const HomeLogo = styled.img`
-   height: 68px;
-   width: 210px;
-   @media ${media.mobile} {
-      height: 47px;
-      width: 145px;
-   }
-`
-const StyledLink = styled(Link)`
-   color: ${colors.primary};
-   text-decoration: none;
-   font-size: 24px;
-   padding: 0 0 0 60px;
-   @media ${media.mobile} {
-      font-size: 18px;
-      padding: 0 0 0 30px;
-   }
-`
 
 
-// HEADER
+
+// Layout Header 
 function Header() {
    return (
-      <ContHeader>
+      <nav className='ContHeader'>
          <Link to="/">
-            <HomeLogo src={Logo} />
+            <img className='HomeLogo' alt='Logo de kasa' src={Logo} />
          </Link>
 
          <div>
-            <StyledLink to="/">
-               <a>Accueil</a>
-            </StyledLink>
+            <NavLink to="/" className='StyledLink'>
+               Accueil
+            </NavLink>
 
-            <StyledLink to="/about">
-               <a>À Propos</a>
-            </StyledLink>
+            <NavLink to="/about" className='StyledLink'>
+               À Propos
+            </NavLink>
          </div>
-      </ContHeader>
+      </nav>
    )
  }
+ 
+ export default Header

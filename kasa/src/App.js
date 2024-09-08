@@ -5,9 +5,9 @@ import { createGlobalStyle } from 'styled-components'
 
 // PAGES
 import Home from './pages/Home/Home';
-import Error from '.layouts/pages/Error/Error';
-import Location from '.layouts/pages/Location/Location';
-import About from '.layouts/pages/About/About';
+import Error from './pages/Error/Error';
+import Location from './pages/Location/Location';
+import About from './pages/About/About';
 
 // LAYOUTS
 import Header from './layouts/Header/Header';
@@ -25,20 +25,25 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 const Contenair = styled.div`
-  width: 70%;  
+  max-width: 1300px;
+  min-height: 80vh;
+
+  width: 80%;  
   margin: 0 auto;
   @media ${media.mobile} {
-    width: 95%;
+    width: 90%;
  }
   `
 
 
 
 function App() {
+
   return (
     <>
+    <GlobalStyle />
     <Contenair>
-      <GlobalStyle />
+
       <Header />
 
       <Routes>
@@ -54,3 +59,5 @@ function App() {
     </>
   );
 }
+
+export default App;
