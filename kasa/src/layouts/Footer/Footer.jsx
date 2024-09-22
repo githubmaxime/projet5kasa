@@ -14,7 +14,7 @@ function Footer() {
             <img src={LogoFooter} alt='Logo de Kasa'/>
          </Link>
 
-         <p className='FooterText'>© 2023 Kasa. All rights reserved</p>
+         <p className='FooterText'>© 2024 Kasa. All rights reserved</p>
       </footer>
    )
  }

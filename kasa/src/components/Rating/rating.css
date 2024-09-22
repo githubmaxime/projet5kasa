@@ -1,6 +1,8 @@
-.Stars{
-   @media (max-width: 1001px) {
-      width: 27px;
-      height: 27px;
-   }
+@media (max-width: 1001px) {
+  .Stars {
+    width: 27px;
+    height: 27px;
+  }
 }
+
+/*# sourceMappingURL=rationg.css.map */

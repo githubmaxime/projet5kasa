@@ -1,0 +1,43 @@
+.ContSlider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .ImgSlider {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 15px;
+  
+    @media (max-width: 1001px) {
+      height: 255px;
+    }
+  }
+  
+  .ArrowSliderLeft,
+  .ArrowSliderRight {
+    position: absolute;
+    cursor: pointer;
+  
+    @media (max-width: 1001px) {
+      width: 7%;
+    }
+  }
+  
+  .ArrowSliderLeft {
+    right: 2%;
+  }
+  
+  .ArrowSliderRight {
+    left: 2%;
+  }
+  
+  .CountSlider {
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    font-weight: 700;
+  }
+  

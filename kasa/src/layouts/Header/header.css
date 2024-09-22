@@ -1,30 +1,36 @@
 .StyledLink {
-   color: #FF6060;
-   text-decoration: none;
-   font-size: 24px;
-   padding: 0 0 0 60px;
-   @media (max-width: 1001px) {
-      font-size: 17px;
-      padding: 0 0 0 15px;
-   }
+  color: #FF6060;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0 0 0 60px;
 }
-.StyledLink.active:hover {
-   filter: brightness(0.9);
+@media (max-width: 1001px) {
+  .StyledLink {
+    font-size: 17px;
+    padding: 0 0 0 15px;
+  }
 }
 .StyledLink.active {
-   text-decoration: underline;
+  text-decoration: underline;
 }
-
+.StyledLink.active:hover {
+  filter: brightness(0.9);
+}
 
 .ContHeader {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
 }
+
 .HomeLogo {
-   width: 180px;
-   @media (max-width: 1001px) {
-      width: 115px;
-   }
+  width: 180px;
 }
+@media (max-width: 1001px) {
+  .HomeLogo {
+    width: 115px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
