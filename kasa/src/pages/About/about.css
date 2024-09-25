@@ -5,4 +5,10 @@
   border-radius: 30px;
 }
 
+@media (max-width: 1001px) {
+  .BannerCont{
+    height: 115px;
+  }
+}
+
 /*# sourceMappingURL=about.css.map */

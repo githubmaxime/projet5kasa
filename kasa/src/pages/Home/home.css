@@ -21,11 +21,11 @@ a {
   z-index: 1;
   position: absolute;
   color: white;
-  font-size: 27px;
+  font-size: 48px;
 }
 @media (max-width: 1001px) {
   .BannerCont::after {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -38,7 +38,7 @@ a {
 }
 @media (max-width: 1001px) {
   .BannerImg {
-    height: 150px;
+    height: 115px;
   }
 }
 

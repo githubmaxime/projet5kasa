@@ -23,14 +23,43 @@
   font-size: 18px;
 }
 
+/* Flèche rotation */
+.arrow {
+  transition: transform 0.5s ease;
+  width: 20px; /* Ajustez à la taille de votre image de flèche */
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
 .TextCollapse {
   background-color: #F6F6F6;
   font-weight: 300;
   padding: 30px 20px;
   margin: 0;
-  color: #FF6060;
+  color: #000000;
   font-size: 17px;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px); /* Texte déplacé légèrement vers le haut quand il est caché */
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
 }
+
+/* Quand le texte est ouvert */
+.TextCollapse.open {
+  max-height: 500px; /* Ajustez cette valeur selon la taille de votre texte */
+  opacity: 1;
+  transform: translateY(0); /* Le texte descend progressivement vers sa position d'origine */
+}
+
+/* Quand le texte est fermé */
+.TextCollapse.closed {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-20px); /* Le texte monte légèrement en étant masqué */
+}
+
 .TextCollapse p {
   padding: 0 0 5px 0;
 }
