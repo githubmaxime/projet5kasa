@@ -3,7 +3,7 @@ import './Collapse.css';
 
 // ASSETS
 import ArrowDown from '../../assets/arrow-down.png'; // Flèche vers le bas
-import ArrowUp from '../../assets/arrow-up.png';     // Flèche vers le haut
+import ArrowUp from '../../assets/arrow-up.png'; // Flèche vers le haut
 
 function Collapse({ data }) {
   const [openIndexes, setOpenIndexes] = useState([]);
@@ -30,11 +30,12 @@ function Collapse({ data }) {
         <div className="ContCollapse" key={index}>
           <div className="TittleCont" onClick={() => toggleCollapse(index)}>
             <h3 className="TittleCollapse">{collapse.title}</h3>
-            {/* Logique des flèches : flèche vers le bas si ouvert, vers le haut si fermé */}
+
+            {/* Utilisation de la bonne flèche avec rotation */}
             <img
-              src={openIndexes.includes(index) ? ArrowUp : ArrowDown}  // Inverser ici
+              src={openIndexes.includes(index) ? ArrowDown : ArrowUp} // Flèche par défaut vers le haut (caché)
               alt="Arrow"
-              className={`arrow ${openIndexes.includes(index) ? 'rotated' : ''}`}
+              className={`arrow ${openIndexes.includes(index) ? 'rotated' : ''}`} // Ajoute la classe 'rotated' quand le texte est ouvert
             />
           </div>
 

@@ -1,7 +1,7 @@
 .ContCollapse {
   font-size: 24px;
   width: 80%;
-  margin: 40px auto;
+  margin: 5px;
   border-radius: 5px;
   width: 100%;
 }
@@ -17,16 +17,16 @@
 }
 
 .TittleCollapse {
-  font-weight: 500;
+  font-weight: 550;
   margin: 0;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 /* Flèche rotation */
 .arrow {
   transition: transform 0.5s ease;
-  width: 20px; /* Ajustez à la taille de votre image de flèche */
+  width: 20px; 
 }
 
 .arrow.rotated {
