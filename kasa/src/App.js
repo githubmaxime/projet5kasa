@@ -21,7 +21,7 @@ import media from './style/media'
 
 const GlobalStyle = createGlobalStyle`
     div {
-        font-family: 'Monteserrat';
+        font-family: 'Montserrat';
     }
 `
 const Contenair = styled.div`
