@@ -33,7 +33,7 @@ function Collapse({ data }) {
 
             {/* Utilisation de la bonne flèche avec rotation */}
             <img
-              src={openIndexes.includes(index) ? ArrowDown : ArrowUp} // Flèche par défaut vers le haut (caché)
+               src={ArrowUp}  // Flèche par défaut vers le haut 
               alt="Arrow"
               className={`arrow ${openIndexes.includes(index) ? 'rotated' : ''}`} // Ajoute la classe 'rotated' quand le texte est ouvert
             />
